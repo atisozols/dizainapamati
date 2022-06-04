@@ -40,7 +40,9 @@ function enableScroll() {
 
 function open_side(){
     const sidebar = document.getElementById("sidebar")
+    sidebar.classList.remove("hidden")
     sidebar.classList.remove("right-[-110%]")
+    
     disableScroll()
     sidebar.classList.add("right-0")
 }
@@ -48,6 +50,8 @@ function open_side(){
 function close_side(){
     const sidebar = document.getElementById("sidebar")
     sidebar.classList.remove("right-0")
+  
     sidebar.classList.add("right-[-110%]")
+  sidebar.classList.add("hidden")
     enableScroll()
 }
