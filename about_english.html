@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Atis Ozols</title>
+  </head>
+  <body class="bg-oatis-bg font-kanit">
+    <nav class="p-5 bg-oatis-header text-white font-extralight">
+      <ul class="flex justify-center sm:justify-between">
+        <li><a href="index_english.html"><img src="images/logo_white.png" alt="Atis Ozols" class="h-5"></a></li>
+        <li>
+          <div class="hidden sm:block">
+            <ul class="flex">
+              <li class="mr-2"><a href="index_english.html">Home</a></li>
+              <li><a href="about_english.html">About me</a></li>
+              <li class="ml-2"><a href="about.html">LV</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <button class="text-white absolute top-0 p-2 right-3 text-4xl sm:hidden" onclick="open_side()">=</button>
+    <div id="sidebar" class="bg-oatis-header w-screen h-screen absolute top-0 right-[-110%]" style="transition: right 0.3s ease">
+      <button class="text-white relative top-4 left-[7%] text-3xl sm:hidden" onclick="close_side()">X</button>
+      <div>
+        <ul class="mt-10 flex flex-col justify-center items-center text-white ">
+          <li class="text-3xl mt-8"><a href="index_english.html">Home</a></li>
+          <li class="text-3xl mt-8"><a href="about_english.html">About me</a></li>
+          <li class="text-3xl mt-8"><a href="about.html">LV</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="min-h-screen">
+      <div class="m-6 rounded-md overflow-hidden flex flex-col justify-center sm:h-custom1 lg:h-custom">
+        <img class="w-full " src="images/heroimg.jpg ">
+      </div>
+      <div class="bg-oatis-card m-6 rounded-md p-6 mb-11">
+        <h3 class="m-6 text-3xl text-bold">About me
+        </h3>
+        <p class="text-xl mx-6">My name is Atis Ozols and I am a year 3 student of the University of Latvia.
+          </p>
+          <p class="text-xl m-6">
+            A lot of time is spent on the road every day, getting from point A to point B. It is also the time, when I plan my schedule and think about all my upcoming events. The days go by so quickly, I rarely notice the places that I pass by every day. This assignment gave me the opportunity to do so.
+          </p>
+      </div>
+    </div>
+    <footer class="drop-shadow-xl mt-10 p-5 bg-oatis-header text-white font-extralight flex flex-col items-center relative bottom-0 w-full">
+      <img src="images/enw.png" alt="Logo" class="max-w-logo w-1/4 sm:w-1/5 lg:w-1/6 ">
+      <span class="mt-4">© Atis Ozols 2022</span>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
