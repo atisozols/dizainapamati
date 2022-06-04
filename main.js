@@ -1,8 +1,3 @@
-document.style.width = "100vw";
-document.style.overflowX = "hidden";
-document.body.style.width = "100vw";
-document.body.style.overflowX = "hidden";
-
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
 function preventDefault(e) {
